@@ -102,7 +102,7 @@ def decode_prediction(pred_array,top_n, thresohold):
     
     return threeclass_pred_n_prob_paired,multilabel_pred_top_n, multilabel_pred_over_threshold
 
-def run_prediction(image_fps, model_path, top_n = 5, thresohold = 0.5):
+def run_classifier(image_fps, model_path, top_n = 5, thresohold = 0.5):
     pred_ds = prepare_pred_dataset_from_fps(image_fps)
     scenery_model = tf.keras.models.load_model(model_path)
     pred_vector = scenery_model.predict(pred_ds,verbose=1) # the prediction vector is a n x 22 array, n as in number of images predicted, 22 as 3class + 19 classes multilabel
