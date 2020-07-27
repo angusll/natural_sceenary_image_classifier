@@ -5,4 +5,4 @@ This is a custom two branch image scenery CNN classififer trained on a custom da
 
 Basicly this model perform an image classification on whether it is a natural scenery, indoor or either, plus 19 scene categories from Place 365.
 
-This model consist of two seperatly trained model, one from a custom dataset and another from the Place365 dataset, and concate afterwards.
+This model consist of two seperately trained CNN model, one from a custom dataset and another from the Place365 dataset, and concate afterwards. Both using Efficientnet-b2 
